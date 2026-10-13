@@ -1,0 +1,234 @@
+/* ==========================================================================
+   MRP HOME SOLUTIONS & REALTY - RESPONSIVE STYLESHEET
+   Mobile-First Breakpoints & Adaptive Viewports
+   ========================================================================== */
+
+/* Large Tablets & Desktops (max-width: 1100px) */
+@media screen and (max-width: 1100px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .pillars-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-card {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .service-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 36px;
+  }
+
+  .hero-stats-ticker {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets & Mobile Devices (max-width: 868px) */
+@media screen and (max-width: 868px) {
+  .section {
+    padding: 80px 0;
+  }
+
+  .topbar-license {
+    display: none;
+  }
+
+  .topbar-content {
+    justify-content: center;
+  }
+
+  .brand-logo-img {
+    height: 52px;
+    max-width: 280px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 85%;
+    max-width: 380px;
+    height: 100vh;
+    background: rgba(7, 12, 21, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-left: 1px solid var(--border-gold);
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    padding: 60px 40px;
+    transition: right var(--transition-smooth);
+    z-index: 1001;
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.9);
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-toggle {
+    display: flex;
+    z-index: 1002;
+  }
+
+  .nav-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .nav-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .nav-actions .btn-sm {
+    display: none;
+  }
+
+  .nav-call-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .advantage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .estimator-card {
+    grid-template-columns: 1fr;
+    padding: 34px 24px;
+    gap: 36px;
+  }
+
+  .proposal-sheet {
+    padding: 34px 22px;
+  }
+
+  .proposal-grid-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group-full {
+    grid-column: span 1;
+  }
+
+  .proposal-form-header {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .proposal-meta-col {
+    text-align: left;
+  }
+
+  .proposal-form-footer {
+    flex-direction: column;
+    gap: 22px;
+    align-items: stretch;
+  }
+
+  .proposal-guarantee-note {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .mobile-action-bar {
+    display: flex;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+
+  .hero-section {
+    padding-top: 120px;
+    min-height: auto;
+  }
+
+  .hero-stats-ticker {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+/* Small Smart Phones (max-width: 540px) */
+@media screen and (max-width: 540px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pillars-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-contact-tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .service-feature-checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-stats-ticker {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .hero-stat-card {
+    padding: 12px 14px;
+  }
+
+  .hero-stat-number {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.1rem;
+  }
+
+  .before-after-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  .services-checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-logo-img {
+    height: 44px;
+    max-width: 220px;
+  }
+
+  .profile-avatar-wrap {
+    max-width: 300px;
+    height: 195px;
+    padding: 16px 20px;
+  }
+}
